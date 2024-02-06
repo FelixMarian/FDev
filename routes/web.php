@@ -22,3 +22,8 @@ Route::get('/', function () {
 
 Route::get('/home', [pageController::class, 'home'])->name('home')->middleware('auth');;
 
+Route::get('/dashboard', function () {
+    return redirect('home');
+})->middleware('auth');;
+
+Route::get('/courses', [pageController::class, 'coursesMain'])->name('coursesMain')->middleware('auth');;

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('uuid');
             $table->string('lastName');
             $table->string('firstName');
+            $table->string('role');
             $table->string('email');
             $table->string('ageCategory');
             $table->string('password');

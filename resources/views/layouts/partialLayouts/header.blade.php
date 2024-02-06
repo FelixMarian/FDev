@@ -135,7 +135,14 @@
                 <button class="dropbtn dropbtn-my-profile">{{ __('My profile') }}</button>
                 <div class="profileButton-content">
                     <a href="#">Profile</a>
-                    <a href="#">Log out</a>
+                    <a>
+                        <form method="POST" action="{{ route('logout') }}" class="inline">
+                    @csrf
+
+                    <button type="submit">
+                        {{ __('Log Out') }}
+                    </button>
+                </form></a>
                 </div>
         </div>
     </div>

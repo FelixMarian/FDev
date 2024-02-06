@@ -7,6 +7,14 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* O înălțime minimă a corpului (viewport height) pentru a menține footer-ul în partea de jos */
+    }
+
+    main {
+      flex: 1;
+      padding-bottom: 60px; /* Înălțimea footer-ului plus spațiul de margine între conținut și footer */
     }
 
     footer {
@@ -14,15 +22,14 @@
       color: #909090;
       text-align: center;
       padding: 10px;
-      bottom: 0;
-      width: 100%;
-      margin-top: 3vw;
     }
   </style>
 </head>
 <body>
 
-  <!-- Conținutul paginii aici -->
+  <main>
+    <!-- Conținutul paginii aici -->
+  </main>
 
   <footer>
     <p>®FDev 2022-2024</p>

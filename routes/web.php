@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homePageController;
 use App\Http\Controllers\pageController;
 use App\Http\Controllers\PageController as ControllersPageController;
+use App\Http\Controllers\coursesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,5 @@ Route::get('/dashboard', function () {
 })->middleware('auth');;
 
 Route::get('/courses', [pageController::class, 'coursesMain'])->name('coursesMain')->middleware('auth');;
+
+Route::get('/courses/{page}', [coursesController::class, 'show'])->name('courses.show')->middleware('auth');;

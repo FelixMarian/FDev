@@ -123,11 +123,11 @@
             <div class="problemsButton">
                 <button class="dropbtn dropbtn-my-profile" style="font-size: 1em;">{{ __('Problems') }}</button>
                 <div class="problemsButton-content">
-                    <a href="#">9th grade</a>
-                    <a href="#">10th grade</a>
-                    <a href="#">11th grade</a>
-                    <a href="#">12th grade</a>
-                    <a href="#">College</a>
+                    <a href="#">{{ __('Level 0')}}</a>
+                    <a href="#">{{ __('Level 1')}}</a>
+                    <a href="#">{{ __('Level 2')}}</a>
+                    <a href="#">{{ __('Level 3')}}</a>
+                    <a href="#">{{ __('Level 4')}}</a>
                 </div>
             </div>
         </div>
